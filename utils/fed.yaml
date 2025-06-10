@@ -1,0 +1,27 @@
+---
+epochs: 100
+num_users: 200
+frac: 0.1
+local_ep: 5
+local_bs: 10
+bs: 128
+lr: 0.01
+momentum: 0.5
+split: user
+
+model: cnn
+kernel_num: 9
+kernel_size: 3, 4, 5
+norm: batch_norm
+num_filters: 32
+max_pool: true
+
+dataset: mnist
+data_distribution: iid
+num_classes: 10
+num_channels: 3
+gpu: 0
+stopping_rounds: 10
+verbose: false
+seed: 1
+all_clients: false
